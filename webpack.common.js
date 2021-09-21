@@ -10,9 +10,15 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.(png|jpe?g|gif)$/i, use: 'url-loader',},
       {
-        test: /\.(js|jsx|css)?/,
+        test: /\.(png|jpe?g|gif)$/i, use: 'url-loader',
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(js|jsx)?/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -32,5 +38,6 @@ module.exports = {
         },
       }
     ]
-  }
+  },
+  resolve: { extensions: ["*", ".js", ".jsx"] }
 };
