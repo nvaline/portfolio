@@ -32,13 +32,13 @@ const Nav = () => {
 
     const list = (anchor) => (
       <Box
-        sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+        sx={{ width: 250 }}
         role="presentation"
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
         <List>
-          {['Home', 'My Stack', 'About Me', 'My Work'].map((text, index) => (
+          {['Home', 'My Stack', 'About Me', 'Projects', 'Contact'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -55,7 +55,7 @@ const Nav = () => {
       <div>
         {['right'].map((anchor) => (
           <React.Fragment key={anchor}>
-            <Button onClick={toggleDrawer(anchor, true)}>CLICK</Button>
+            <Button onClick={toggleDrawer(anchor, true)}><i class="fas fa-bars"></i></Button>
             <SwipeableDrawer
               anchor={anchor}
               open={state[anchor]}

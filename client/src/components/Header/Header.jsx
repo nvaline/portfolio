@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Nav from './Nav.jsx';
 
 const styles = {
+  // position: "fixed",
   display: "flex",
   justifyContent: "flex-end",
   alignItems: "center"
