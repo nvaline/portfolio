@@ -10,11 +10,16 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import {
+  Home as HomeIcon,
+  Devices as StackIcon,
+  EmojiPeople as AboutIcon,
+  Folder as ProjectsIcon,
+  AlternateEmail as ContactIcon
+} from '@mui/icons-material'
 
 const Nav = () => {
-    const [state, setState] = React.useState({
+    const [state, setState] = useState({
       right: false,
     });
 
@@ -30,6 +35,27 @@ const Nav = () => {
       setState({ ...state, [anchor]: open });
     };
 
+    const getIcon = (index) => {
+      switch (index) {
+        case 0:
+           return <HomeIcon />
+          break;
+        case 1:
+          return <StackIcon />
+          break;
+        case 2:
+          return <AboutIcon />
+          break;
+        case 3:
+          return <ProjectsIcon />
+          break;
+        case 4:
+          return <ContactIcon />
+          break;
+        default:
+      }
+    }
+
     const list = (anchor) => (
       <Box
         sx={{ width: 250 }}
@@ -41,7 +67,7 @@ const Nav = () => {
           {['Home', 'My Stack', 'About Me', 'Projects', 'Contact'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                { getIcon(index) }
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -55,7 +81,7 @@ const Nav = () => {
       <div>
         {['right'].map((anchor) => (
           <React.Fragment key={anchor}>
-            <Button onClick={toggleDrawer(anchor, true)}><i class="fas fa-bars"></i></Button>
+            <Button onClick={toggleDrawer(anchor, true)}><i className="fas fa-bars"></i></Button>
             <SwipeableDrawer
               anchor={anchor}
               open={state[anchor]}
