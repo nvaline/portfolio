@@ -1,5 +1,5 @@
 import React from 'react';
-
+// figure out why the image wont load => check web[ack settings]
 const Intro = () => {
   return (
     <section className="intro" id="home">
