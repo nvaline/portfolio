@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Nav from './Nav.jsx';
 
@@ -11,7 +11,7 @@ const styles = {
 
 const Header = () => {
   return (
-    <header style={ styles }>
+    <header style={ styles } id="Home">
       <Nav />
     </header>
   )

@@ -4,6 +4,7 @@ import Header from './Header/Header.jsx';
 import Intro from './Main/Intro.jsx';
 import Stack from './Main/Stack.jsx';
 import About from './Main/About.jsx';
+import Work from './Main/Work.jsx';
 import Footer from './Footer/Footer.jsx';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Intro />
       <Stack />
       <About />
+      <Work />
       <Footer />
     </div>
   )
