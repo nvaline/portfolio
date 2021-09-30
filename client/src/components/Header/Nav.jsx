@@ -67,7 +67,7 @@ const Nav = () => {
           {['Home', 'My Stack', 'About Me', 'Projects', 'Contact'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-                { getIcon(index) }
+                {getIcon(index)}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
