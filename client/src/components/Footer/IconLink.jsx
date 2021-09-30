@@ -7,7 +7,7 @@ const IconLink = ({ link, icon }) => {
       <i className={ icon }></i>
     </a>
   </li>
-  )
+  );
 };
 
 export default IconLink;
