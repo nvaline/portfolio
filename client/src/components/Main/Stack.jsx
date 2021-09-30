@@ -17,10 +17,6 @@ const Stack = () => {
           <h3>CSS</h3>
           <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
         </div>
-        <div className="stack-item">
-          <h3>HTML</h3>
-          <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
-        </div>
       </div>
         <a href="#Projects" className="btn">My Work</a>
     </section>
