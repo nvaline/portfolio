@@ -141,13 +141,26 @@ h3 {
 }
 
 
-/* Header */
-
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
 }
+
+/*  NAV */
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
+}
+
+
 /*
 .logo {
   max-width: 100px;

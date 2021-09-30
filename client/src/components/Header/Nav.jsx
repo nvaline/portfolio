@@ -78,7 +78,7 @@ const Nav = () => {
     );
 
     return (
-      <div>
+      <div className="nav-toggle">
         {['right'].map((anchor) => (
           <React.Fragment key={anchor}>
             <Button onClick={toggleDrawer(anchor, true)}><i className="fas fa-bars"></i></Button>
