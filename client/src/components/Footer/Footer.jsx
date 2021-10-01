@@ -3,7 +3,7 @@ import IconLink from './IconLink.jsx';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="Contact">
       <a href="mailto:nickvaline@gmail.com" className="footer_link">nickvaline@gmail.com</a>
       <ul className="social-list">
         <IconLink

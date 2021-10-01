@@ -1,5 +1,7 @@
 import React from 'react';
 
+import nick from '../../img/nick_01.jpg';
+
 const About = () => {
   return (
     <section className="about-me" id="About Me">
@@ -9,7 +11,7 @@ const About = () => {
         <p>Going to need to make some shit up to put here about myself... Not sure what I am goiing to write but I will put some of this dumb shit right now to hold space.</p>
         <p>Going to need to make some shit up to put here about myself... Not sure what I am goiing to write but I will put some of this dumb shit right now to hold space.</p>
       </div>
-      <img src="" alt="nick close-up" className="about_me-img" />
+      <img src={ nick } alt="nick close-up" className="about_me-img" />
     </section>
   );
 };

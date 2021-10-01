@@ -63,13 +63,14 @@ const Nav = () => {
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
-        <List>
+        <List className="nav-drawer">
           {['Home', 'My Stack', 'About Me', 'Projects', 'Contact'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
+            <ListItem button key={text} href="#Projects">
+              <ListItemIcon className="nav-drawer">
                 {getIcon(index)}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              {/* <!-- NEED TO ADD THIS CLASSNAME TO THE CSS FILE --> */}
+              <ListItemText primary={text} className="nav-drawer"/>
             </ListItem>
           ))}
         </List>

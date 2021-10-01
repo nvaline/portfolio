@@ -14,8 +14,8 @@
   --fw-bold: 900;
 
   --clr-light: rgb(255, 255, 255);
-  --clr-drk: #030303;
-  --clr-accent: #990000;
+  --clr-drk: #031831;
+  --clr-accent: #8BA6CA;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  background: rgb(128, 87, 87);
+  background: rgb(56, 76, 109);
   color: var(--clr-drk);
   margin: 0;
   font-family: var(--ff-primary);
@@ -160,6 +160,9 @@ header {
   z-index: 1000;
 }
 
+.nav-drawer {
+  background-color: blue;
+}
 
 /*
 .logo {
@@ -183,8 +186,7 @@ header {
 } */
 
 
-/*  Intro Section */
-
+/*  INTRO */
 .intro {
   position: relative;
 }
@@ -231,7 +233,7 @@ header {
 /*  MY STACK */
 .my-stack {
   background-color: #0303034d; /* could do accent color*/
-  background-image: url(../img/services-bg.jpg);
+  /* background-image: url(../img/services-bg.jpg); */
   background-size: cover;
   background-blend-mode: color-burn;
   color: var(--clr-light);
@@ -357,8 +359,8 @@ header {
 
 /* FOOTER */
 .footer {
-  background: #111;
-  color: var(--clr-accent);
+  background: var(--clr-accent);
+  color: var(--clr-drk);
   text-align: center;
   padding: 2.5em 0;
   font-size: var(--fs-h3);
@@ -375,7 +377,7 @@ header {
 
 .footer_link:hover,
 .social-list_link:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .footer_link:hover {

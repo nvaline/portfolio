@@ -1,6 +1,6 @@
 import React from 'react';
 
-import nick from '../../img/nick_01.jpg';
+import nick from '../../img/nick_02.jpg';
 
 // figure out why the image wont load => check web[ack settings]
 const Intro = () => {

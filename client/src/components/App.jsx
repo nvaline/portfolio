@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 
 import Header from './Header/Header.jsx';
 import Intro from './Main/Intro.jsx';
