@@ -164,28 +164,6 @@ header {
   background-color: blue;
 }
 
-/*
-.logo {
-  max-width: 100px;
-  padding: auto;
-}
-.btn-reg, .btn-hover {
-  position: absolute;
-  max-width: 100px;
-}
-
-.btn-reg {
-  z-index: 2;
-}
-.btn-hover {
-  z-index: 1;
-}
-
-.btn-reg:hover {
-  display: none;
-} */
-
-
 /*  INTRO */
 .intro {
   position: relative;
